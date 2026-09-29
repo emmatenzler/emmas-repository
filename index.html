@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flatmate TV Vote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>What are we watching next?</h1>
+    <p>Nominate a series. Vote. Let democracy ruin movie night.</p>
+  </header>
+
+  <main>
+
+    <section class="winner-section">
+      <p class="small-heading">CURRENT WINNER</p>
+      <h2 id="winner">No votes yet</h2>
+    </section>
+
+    <section>
+      <h2>Series</h2>
+      <div id="shows" class="shows-grid"></div>
+    </section>
+
+    <section class="add-section">
+      <h2>Add a series</h2>
+
+      <form id="show-form">
+
+        <input
+          type="text"
+          id="title"
+          placeholder="Series title"
+          required
+        >
+
+        <input
+          type="text"
+          id="genre"
+          placeholder="Genre"
+          required
+        >
+
+        <input
+          type="text"
+          id="image"
+          placeholder="Poster image URL"
+        >
+
+        <button type="submit">Add series</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
